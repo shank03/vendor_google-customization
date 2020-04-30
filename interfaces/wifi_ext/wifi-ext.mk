@@ -15,7 +15,7 @@
 # limitations under the License.
 #
 
-WIFI_EXT_PATH := vendor/google/customization/interfaces/wifi_ext
+WIFI_EXT_PATH := vendor/google-customization/interfaces/wifi_ext
 
 DEVICE_MANIFEST_FILE += $(WIFI_EXT_PATH)/manifest.xml
 
