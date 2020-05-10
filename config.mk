@@ -19,8 +19,6 @@ $(call inherit-product, vendor/google-customization/interfaces/wifi_ext/wifi-ext
 endif
 
 ifeq ($(TARGET_FLATTEN_APEX),false)
-$(call inherit-product, vendor/google-customization/apex/apex.mk)
-
 # Apex Namespace
 PRODUCT_SOONG_NAMESPACES += vendor/google-customization/apex/apex_images
 
@@ -30,3 +28,4 @@ DEVICE_PACKAGE_OVERLAYS += vendor/google-customization/overlay
 endif
 
 $(call inherit-product, vendor/google-customization/product/config.mk)
+$(call inherit-product, vendor/google-customization/apex/apex.mk)
